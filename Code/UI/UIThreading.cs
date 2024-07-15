@@ -120,9 +120,9 @@ namespace ACME
             if (_operating)
             {
                 // Check modifier keys according to settings.
-                bool ctrlPressed = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl);
+                bool ctrlPressed = Input.GetKey(KeyCode.RightAlt) || Input.GetKey(KeyCode.RightAltAlt);
                 bool shiftPressed = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
-
+                // changed keybind of control to rightalt
                 // Save/restore position - is control pressed?
                 if (ctrlPressed)
                 {
